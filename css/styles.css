@@ -227,8 +227,25 @@ color: var(--accent-color);
 .site-nav .item + .item{
   margin-left: 50px;
 }
+.item{
+  position: relative;
+}
+.link::after{
+  position: absolute;
+  display: block;
+  content: " ";
+  width:100%;
+  height:4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+}
 
-
+.link:hover::after{
+opacity: 1;
+}
 
 /* list-contacts */
 .list-contacts{
@@ -482,6 +499,36 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--primary-text-color);
 }
+.work-title-conteiner{
+  position: relative;
+}
+
+.img-work-conainer{
+  display: flex;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.text-work-conteiner{
+  display: block;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--white-color);
+
+}
+
 
 /* team-fon */
 

@@ -909,9 +909,11 @@ color: var(--secondary-text-color);
   background-color: #FFFFFF;
   top:221px;
   left: 50%;
-  transform: translate(-50%)
-
+  transform: translate(-50%);
+  margin: 0;
+  padding: 0;
 }
+
 
 .close{
   
@@ -932,6 +934,7 @@ color: var(--secondary-text-color);
   background-size: cover;
   object-fit: cover;
   fill:var(--logo-color);
+  cursor: pointer;
 }
 
 .close:hover{

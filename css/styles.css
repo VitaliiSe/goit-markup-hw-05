@@ -253,15 +253,16 @@ color: var(--accent-color);
   bottom: 0;
   left: 0;
 
-  opacity:0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* opacity:0; */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  transform: scaleX(0);
 }
 
 
-.link:focus::after,
 .link:hover::after{
-  opacity:1;
+  /* opacity:1; */
+  transform: scaleX(1);
 }
 
 
@@ -790,37 +791,39 @@ cursor: pointer;
 /* overlay portfolio  */
 .examples-border-img{
   position: relative;
+  overflow: hidden;
+
 }
+
 
 .examples-text-border{
   display: inline-flex;
   position: absolute;
-  top: 50%;
+  top:50%;
   left: 50%;
   transform: translate(-50%, -50%);
 /*   
   outline: 1px solid black; */
- opacity: 0;
- transition: 250ms opacity linear ;
+
+
 }
 
 .examples-border:hover .examples-text-border{
-  opacity: 1;
+  
+  /* transform:translateY(0); */
 }
 
-.examples-border:hover .examples-border-img::before{
-  opacity: 1;
+.examples-border:hover .examples-overlay{
+  transform:translateY(-100%);
 }
 
-.examples-border-img::before{
-  display: inline-block;
-  content: "";
+.examples-overlay{
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   position: absolute;
-  opacity: 0;
-  transition: 250ms opacity linear ;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform:translateY(100%);
 }
 
 

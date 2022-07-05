@@ -84,6 +84,7 @@ line-height: 1.2;
 letter-spacing: 0.03em;
 color: var(--logo-color);
 text-decoration: none;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .logo:hover,
 .logo:focus{
@@ -175,6 +176,7 @@ color:var(--accent-color);
   background-color:rgba(255, 255, 255, 0.1);
   border-radius: 120px;
   cursor: pointer;
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-social-networks:hover,
 .button-social-networks:focus{
@@ -288,6 +290,8 @@ text-decoration: none;
 
 align-items: center;
 justify-content: center;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-contacts .contact:hover,
@@ -305,6 +309,8 @@ color: var(--accent-color);
   height: 12px;
   margin-right: 10px;
   cursor: pointer;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-mail:hover,
 .icon-mail:focus{
@@ -321,6 +327,8 @@ color: var(--accent-color);
   height: 16px;
   margin-right: 10px;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .icon-tell:hover,
@@ -344,6 +352,8 @@ letter-spacing: 0.03em;
 color: var(--contact-color);
 text-decoration: none;
 margin-bottom: 9px;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-footer:hover,
@@ -636,6 +646,8 @@ color: var(--secondary-text-color);
   background-color:var(--white-color);
   border-radius: 120px;
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus{
@@ -647,6 +659,8 @@ width: 20px;
 height: 20px;
 cursor: pointer;
 fill:var(--box-button);
+
+transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-button:hover,
@@ -687,6 +701,8 @@ margin-bottom: 50px;
   cursor: pointer;
   justify-content: center;
 
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 /* outline: 1px solid black; */
 }
 .box-clients:hover,
@@ -706,6 +722,8 @@ margin-bottom: 50px;
  height: 60px;
  fill:#AFB1B8;
  cursor: pointer;
+
+ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  /* outline: 1px solid black; */
 }
 
@@ -752,6 +770,10 @@ background-color:var(--button-color);
 color: var(--primary-text-color);
 border:transparent;
 border-radius: 4px;
+
+transition: var(--background-color) 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .examples .button-bar:focus,
 .examples .button-bar:hover{
@@ -775,7 +797,7 @@ width: 370px;
 height: 404px;
 border: 1px solid var(--color-examples-border);
 cursor: pointer;
-
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .examples-border:hover{

@@ -244,7 +244,7 @@ color: var(--accent-color);
   
 }
 
-.link:after{
+.current:after{
   position: absolute;
   display: block;
   content: " ";
@@ -255,14 +255,13 @@ color: var(--accent-color);
   bottom: 0;
   left: 0;
 
-  opacity:0;
+  opacity:1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-
-.link:hover::after{
-  opacity:1;
+.current:hover::after{
+  opacity:0;
 }
 
 

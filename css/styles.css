@@ -769,7 +769,7 @@ color: var(--primary-text-color);
 border:transparent;
 border-radius: 4px;
 
-transition: var(--background-color) 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
 color 250ms cubic-bezier(0.4, 0, 0.2, 1),
 box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -907,7 +907,7 @@ color: var(--secondary-text-color);
   width: 528px;
   height: 581px;
   background-color: #FFFFFF;
-  top:221px;
+  top:91px;
   left: 50%;
   transform: translate(-50%);
   margin: 0;

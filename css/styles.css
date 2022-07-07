@@ -907,9 +907,9 @@ color: var(--secondary-text-color);
   width: 528px;
   height: 581px;
   background-color: #FFFFFF;
-  top:91px;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
   margin: 0;
   padding: 0;
 }
